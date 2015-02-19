@@ -9,7 +9,7 @@ Generated java client for maventa soap API
     <repositories>
      <repository>
          <id>maventa-java-client-repo</id>
-         <url>https://raw.github.com/AndroidConsulting/maventa-java-client/mvn-repo/</url>
+         <url>https://raw.githubusercontent.com/AndroidConsulting/maventa-java-client/mvn-repo/</url>
          <snapshots>
              <enabled>true</enabled>
              <updatePolicy>always</updatePolicy>
