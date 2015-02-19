@@ -7,11 +7,22 @@
     <groupId>fi.androidconsulting</groupId>
     <artifactId>maventa-client</artifactId>
     <version>1.0.0</version>
+
+    <name>Maventa java client</name>
+    <description>This project provides generated java classes from maventa soap wsdl.
+    </description>
+    <url>https://github.com/AndroidConsulting/maventa-java-client</url>
+    <contributors>
+        <contributor>
+            <name>Jussi Pöri</name>
+        </contributor>
+    </contributors>
+
     <properties>
         <!-- github server corresponds to entry in ~/.m2/settings.xml -->
         <github.global.server>github</github.global.server>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>https://github.com/AndroidConsulting/maventa-java-client</url>
 
     <dependencies>
 
@@ -45,6 +56,12 @@
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -75,7 +92,7 @@
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>0.9</version>
+                <version>0.11</version>
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>
                     <!-- git commit message -->
